@@ -1,28 +1,28 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="app">
+    <h1 >本周代办事项</h1>
+     <TodoApp />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import TodoApp from './components/TodoApp.vue'
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  components: { TodoApp }
+
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+h1{
+  font-size: 30px;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+.app {
+  margin-top: 50px;
+  align-items: center;
+  background-color: azure;
+  width: 400px;
+  margin: 0 auto;
 }
 </style>
